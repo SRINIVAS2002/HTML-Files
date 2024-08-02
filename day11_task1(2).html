@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="./day10_task1(3).html" method="post">
+        <dl>
+            <dt>
+                <label for="fname">First Name</label><br>
+            </dt>
+            <dd>
+                <input type="text" name="firstname" id="fname" placeholder="Enter First Name" pattern="[a-zA-Z]+" required><br>
+            </dd>
+            <dt>
+                <label for="lname">Last Name</label><br>
+            </dt>
+            <dd>
+                <input type="text" name="lastname" id="lname" placeholder="Enter Last Name" pattern="[a-zA-Z]+" required><br>
+            </dd>
+            <dt>
+                <label for="uname">User Name</label><br>
+            </dt>
+            <dd>
+                <input type="text" name="username" id="uname" placeholder="Enter User Name" pattern="[a-zA-Z\d_]+" required><br>
+            </dd>
+            <dt>
+                <label for="pword">Password</label><br>
+            </dt>
+            <dd>
+                <input type="password" name="password" id="pword" placeholder="Enter Password" pattern="(?:*[A-Z])(?:*[a-z])(?:*\d)(?:*[@.!#$]){8,16}" required><br>
+            </dd>
+            <dt>
+                <label for="mail">Email Address</label><br>
+            </dt>
+            <dd>
+                <input type="email" name="mail" id="mail" placeholder="Enter Email Address" pattern="[a-z._\d]+@[a-z]+\.[a-z]{2,3}" required><br>
+            </dd>
+            <dt>
+                <label for="phno">Phone Number</label><br>
+            </dt>
+            <dd>
+                <input type="number" name="number" id="phno" placeholder="Enter Phone Number" pattern="\+91[6-9]\d{9}" required><br>
+            </dd>
+            <dt>
+                <label for="gender">Gender</label><br>
+            </dt>
+            <dd>
+                <input type="radio" name="gender" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" required>
+                <label for="female">Female</label>
+            </dd>
+            <dt>
+                <label for="dob">Date Of Birth</label><br>
+            </dt>
+            <dd>
+                <input type="date" name="dob" id="dob" required><br>
+            </dd>
+        </dl>
+    </form>
+    <form action="./day10_task1(3).html" method="post">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
