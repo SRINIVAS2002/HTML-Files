@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="./day10_task1(4).html" method="post">
+        <label for="un">Username</label><br>
+    <input type="text" name="username" id="un" placeholder="Enter Username" required pattern="[a-zA-Z\d_]+" title="consist alphabets, numbers, underscore">
+    <br><label for="">Password</label><br>
+    <input type="password" name="password" id="pw" placeholder="Enter Password" required pattern="(?:*[A-Z])(?:*[a-z])(?:*\d)(?:*[@.!#$]){8,16}">
+    <br><br>
+    <form action="./day10_task1(4).html" method="post"><input type="submit" name="Login"></form><br>
+    If you do not have an account please click below.<br> <form action="./day10_task1(2).html"><input type="submit" value="Register"></form>
+    </form>
+</body>
+</html>
